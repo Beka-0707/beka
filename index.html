@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT-Технологии</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Шапка с экспертом -->
+    <header>
+        <h1>Добро пожаловать в мир IT</h1>
+        <p>Изучайте новейшие технологии и развивайтесь в сфере IT!</p>
+        <button id="openPopup">Наши эксперты</button>
+    </header>
+
+    <!-- Модальное окно с экспертами -->
+    <div class="overlay"></div>
+    <div class="popup">
+        <h2>Лучшие IT-эксперты</h2>
+        <p>Мы сотрудничаем с профессионалами из Google, Microsoft и других компаний.</p>
+        <button class="close">Закрыть</button>
+    </div>
+
+    <!-- Курсы в виде вкладок -->
+    <section id="courses">
+        <h2>Популярные курсы</h2>
+        <div class="tabs">
+            <button class="tablink active" onclick="openCourse(event, 'python')">Python</button>
+            <button class="tablink" onclick="openCourse(event, 'frontend')">Frontend</button>
+            <button class="tablink" onclick="openCourse(event, 'cybersecurity')">Кибербезопасность</button>
+        </div>
+
+        <div id="python" class="tabcontent">
+            <h3>Python</h3>
+            <p>Изучите Python для анализа данных и веб-разработки.</p>
+        </div>
+        <div id="frontend" class="tabcontent">
+            <h3>Frontend</h3>
+            <p>Освойте HTML, CSS, JavaScript и современные фреймворки.</p>
+        </div>
+        <div id="cybersecurity" class="tabcontent">
+            <h3>Кибербезопасность</h3>
+            <p>Научитесь защищать данные и предотвращать кибератаки.</p>
+        </div>
+    </section>
+
+    <!-- Тренды IT -->
+    <section id="trends">
+        <h2>Последние IT-тренды</h2>
+        <div class="accordion">
+            <h3>Искусственный интеллект</h3>
+            <div><p>AI меняет наш мир – от чат-ботов до генеративных моделей.</p></div>
+            <h3>Кибербезопасность</h3>
+            <div><p>Обнаружение угроз и защита данных становятся важнее с каждым днем.</p></div>
+            <h3>Веб-разработка</h3>
+            <div><p>Новые фреймворки и подходы делают веб быстрее и удобнее.</p></div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <p>&copy; 2025 IT-Технологии</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
